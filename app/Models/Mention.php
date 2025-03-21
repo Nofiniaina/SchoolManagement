@@ -19,4 +19,8 @@ class Mention extends Model
     public function parcours(){
         return $this->hasMany(Parcours::class);
     }
+
+    public function academicClasses(){
+        return $this->hasMany(AcademicClass::class);
+    }
 }
